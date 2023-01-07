@@ -10,5 +10,6 @@
 /* Home */
 @import url("home/introducao.css");
 @import url("home/tecnologias.css");
+@import url("home/parceiros.css");
 /* Bicicletas */
 @import url("bicicletas/bicicletas-lista.css");
