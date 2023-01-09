@@ -16,10 +16,20 @@
   text-transform: uppercase;
   color: var(--cor-p5);
   font-weight: bold;
+  max-width: max-content;
 }
 
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59217);
+}
+
+.btn.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.btn.secundario:hover {
+  background: var(--cor-9);
 }
 
 @media (max-width: 600px) {
