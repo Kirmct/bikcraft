@@ -17,6 +17,8 @@
   color: var(--cor-p5);
   font-weight: bold;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
