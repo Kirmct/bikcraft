@@ -84,6 +84,10 @@
   background-color: var(--cor-11);
 }
 
+.titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top 20px right;
+}
+
 .titulo p {
   margin-bottom: 4px;
 }
