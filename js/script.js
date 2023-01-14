@@ -61,3 +61,9 @@ function evetosGaleria(img) {
 }
 
 galeria.forEach(evetosGaleria);
+
+//
+// plugin de animacao js
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
