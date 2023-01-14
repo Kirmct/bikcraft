@@ -18,7 +18,6 @@ function ativarProduto(parametro) {
   const elemento = document.getElementById(parametro);
   if (elemento) {
     elemento.checked = true;
-    console.log(elemento);
   }
 }
 parametros.forEach(ativarProduto);
@@ -34,14 +33,31 @@ function ativarPergunta(event) {
 
   if (resposta) {
     resposta.classList.toggle(`ativa`);
-    const ativa = resposta.classList.contains(`ativa`);
+    const ativa = resposta.classList.contains(`ativa`); // retorna boolean
     pergunta.setAttribute(`aria-expanded`, ativa);
   }
-
-  console.log(resposta);
 }
 
 function eventosPerguntas(pergunta) {
   pergunta.addEventListener(`click`, ativarPergunta);
 }
 perguntas.forEach(eventosPerguntas);
+
+//
+// galeria de bicicletas
+const galeria = document.querySelectorAll(`.bicicleta-imagens img`);
+const galeriaContainer = document.querySelector(`.bicicleta-imagens`);
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = window.matchMedia(`(min-width: 1000px)`).matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function evetosGaleria(img) {
+  img.addEventListener(`click`, trocarImagem);
+}
+
+galeria.forEach(evetosGaleria);
